@@ -1,7 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 a {
@@ -10,10 +27,54 @@ a {
     font-style: normal;
 }
 
-ul {
-    list-style: none; }
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1158px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
     /* PAGE HEADER */
+
+    /* TOP LINE */
+
+.top-line {
+    border-bottom: 1px solid #E7E9FC;
+ }
+
+.top-line .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* NAVIGATION SECTION */
+
+.navigation {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
 .navigation .logo {
     font-family: "Raleway", sans-serif;
@@ -24,6 +85,9 @@ ul {
     text-decoration: none;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 72px;
 }
 
 .navigation .logo-accent {
@@ -37,12 +101,14 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+
+.nav-menu {
+     display: flex;
+     gap: 40px;
+}
+
+.nav-link { 
+    padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -51,11 +117,23 @@ ul {
 .contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
-
 }
+
+/* CONTACTS SECTION */
 
 .contacts {
     font-style: normal;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+.contact-list {
+    display: flex;
+    gap: 40px;
+    white-space: nowrap;
+ 
 }
 
 .contact-link {
@@ -66,10 +144,27 @@ ul {
     color: #434455;
 }
 
+.contact-item {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-weight: 400;
+    color: #434455;
+}
+
 /* HERO SECTION */
 
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .title {
@@ -79,9 +174,17 @@ ul {
     color: #FFFFFF;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    display: block;
+    text-align: center;
+    max-width: 496px;
 }
 
+/* BUTTON */
+
 .action-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
     font-family: "Roboto" sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -91,6 +194,9 @@ ul {
     cursor: pointer;
     background-color: #4d5ae5;
     color: #FFFFFF;
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    border: none;
 }
 
 .action-btn:hover,
@@ -100,12 +206,53 @@ ul {
 
 /* FEATURES */
 
+.visually-hidden {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
+
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    text-align: left;
+    gap: 24px;
+} 
+
+/*  work on this part
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc((100% - (3*24px)) / 4;
+    }
+ */
+
 .subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+}
+
+.feature .subtitle {
+    text-align: left;
+    margin-bottom: 8px;
 }
 
 .subtitle-text {
@@ -113,21 +260,28 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 /* OUR TEAM SECTION */
 
 .team {
-background: #F4F4FD;
+    background: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-subtitle, 
 .portolio-subtitle {
-color: #2e2f42;
-text-align: center;
-text-transform: capitalize;
-line-height: 1.11;
-letter-spacing: 0.02em;
-font-size: 36px;
-font-weight: 700;
+    color: #2e2f42;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-member {
@@ -142,6 +296,7 @@ text-align: center;
 background-color: #FFFFFF;
 }
 
+/* finish setting up portfolio section */
 
 /* FOOTER SECTION */
 
@@ -171,3 +326,5 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
 }
+
+/* review & finish footer section */
