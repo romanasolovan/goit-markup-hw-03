@@ -347,7 +347,7 @@ img {
 
 .portfolio-img {
     object-fit: cover;
-    display: flex;
+    display: block;
 }
 
 
