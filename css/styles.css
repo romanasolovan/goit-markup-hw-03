@@ -63,6 +63,10 @@ img {
     justify-content: space-between;
 }
 
+.logo {
+    margin-right: 76px;
+}
+
     /* NAVIGATION SECTION */
 
 .navigation {
@@ -311,6 +315,10 @@ img {
     object-fit: cover;
 }
 
+.member-content {
+    padding: 32px 0 32px
+}
+
 .member-content .subtitle {
     margin-bottom: 8px;
 }
@@ -355,9 +363,10 @@ img {
     text-align: left;
     display: flex;
     flex-direction: column;
-    border: 1px solid #E7E9FC;
+    border: 1px solid #e7e9fc;
     border-top: none;
     padding-top: 0;
+    padding: 32px 16px;
 }
 
 .portfolio-card .port-subtitle {
@@ -368,6 +377,7 @@ img {
 
 .port-subtitle-text {
     margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .port-subtitle {
