@@ -346,6 +346,7 @@ img {
     width: calc( (100% - 48px) / 3);
     box-sizing: border-box;
     height: 420px;
+    border-top: none;
 }
 
 .portfolio-list {
