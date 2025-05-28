@@ -65,6 +65,13 @@ img {
 
 .logo {
     margin-right: 76px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris-accent-color);
 }
 
     /* NAVIGATION SECTION */
@@ -355,10 +362,10 @@ img {
 }
 
 .portfolio-card {
+    border-top: none;
     text-align: left;
     display: flex;
     flex-direction: column;
-    border-top: none;
     padding-top: 0;
     border: 1px solid #e7e9fc;
     padding: 32px 16px;
