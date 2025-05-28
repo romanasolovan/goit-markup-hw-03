@@ -357,9 +357,9 @@ img {
     border-top: none;
 }
 
-.container {
+/* .container {
     border-top: none;
-}
+} */
 
 .portfolio-img {
     object-fit: cover;
@@ -367,12 +367,12 @@ img {
 }
 
 .portfolio-card {
-    border-top: none;
     text-align: left;
     display: flex;
     flex-direction: column;
     padding-top: 0;
     border: 1px solid #e7e9fc;
+    border-top: none;
     padding: 32px 16px;
 }
 
