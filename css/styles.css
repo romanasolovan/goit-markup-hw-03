@@ -354,6 +354,11 @@ img {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+    border-top: none;
+}
+
+.container {
+    border-top: none;
 }
 
 .portfolio-img {
