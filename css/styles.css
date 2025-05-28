@@ -326,6 +326,7 @@ img {
     background-color: #fff;
     text-align: left;
 }
+
 .portfolio-item {
     display: flex;
     flex-wrap: wrap;
@@ -333,32 +334,44 @@ img {
     column-gap: 24px;
     width: calc( (100% - 48px) / 3);
     box-sizing: border-box;
+    width: 360px;
+    height: 420px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
-.portfolio-item img {
+.portfolio-img {
     object-fit: cover;
+    display: flex;
 }
+
 
 .portfolio-card {
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: none;
 }
 
-.portfolio-card .subtitle {
+.portfolio-card .port-subtitle {
+    margin-top: 32px;
     margin-bottom: 8px;
     text-align: left;
 }
 
+.port-subtitle-text {
+    margin-left: 16px;
+}
+
+.port-subtitle {
+    margin-left: 16px;
+}
 
 /* FOOTER SECTION */
 
