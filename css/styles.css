@@ -370,6 +370,10 @@ img {
     padding: 32px 16px;
 }
 
+.container {
+    border-top: none;
+}
+
 .portfolio-card .port-subtitle {
     /* margin-top: 32px; */
     margin-bottom: 8px;
