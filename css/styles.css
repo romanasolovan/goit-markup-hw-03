@@ -361,7 +361,7 @@ img {
 }
 
 .portfolio-card {
-    border-top: none;
+    /* border-top: none; */
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -370,9 +370,12 @@ img {
     padding: 32px 16px;
 }
 
-.container {
+.section .container {
     border-top: none;
 }
+/* .container {
+    border-top: none;
+} */
 
 .portfolio-card .port-subtitle {
     /* margin-top: 32px; */
