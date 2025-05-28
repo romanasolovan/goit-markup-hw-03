@@ -357,6 +357,7 @@ img {
     flex-direction: column;
     border: 1px solid #E7E9FC;
     border-top: none;
+    padding-top: 0;
 }
 
 .portfolio-card .port-subtitle {
